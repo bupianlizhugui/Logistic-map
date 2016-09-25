@@ -58,4 +58,4 @@ The moment we try crossing **r = 4**,  something really goes weird and the value
 Let's look at the recurrent equation again: **X<sub>t+1</sub> = r*X<sub>t</sub>(1 - X<sub>t</sub> )**. 
 Doesn't it strongly resembles the derivative of the sigmoid activation? Moreover, setting the *learning hyper-parameter* effects the learning in a very similar fashion. The higher we set the learning rate, more is the fluctiation in the error rate;  And analogously on setting it beyond the certain value, the gradients explode and no learning takes place.
 
-On the other hand, most of the current models prefer using the ReLu function instead of the Sigmoid activation and still display similar behaviour. *Is it a matter of some simple co-incidence or is there really something intersting behind the hood?* 
+On the other hand, most of the current models prefer using the ReLu function instead of the Sigmoid activation and still display similar behaviour. **Is it just a matter of some simple co-incidence or is there really something intersting behind the hood?** 
