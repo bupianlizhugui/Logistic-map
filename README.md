@@ -52,4 +52,10 @@ By the time we reach **r = 4**, it's a complete chaos. Both starting points disp
 ![alt text](https://github.com/yashchandak/Logistic-map/blob/master/images/r4.png "Logo Title Text 1")
 
 
-The moment we try crossing **r = 4**,  something really goes weird and the values explode. Within a few iterations the values reach *infintiy* and there is no turning back from there on.
+The moment we try crossing **r = 4**,  something really goes weird and the values explode. Within a few iterations the values reach *infinity* and there is no turning back from there on. Furthermore, John Von Neumann had suggested using this equation with **r = 4** for random number generator in the late 1940s. 
+
+#Does Deep-learning has anything to do with it?
+Let's look at the recurrent equation again: **X<sub>t+1</sub> = r*X<sub>t</sub>(1 - X<sub>t</sub> )**. 
+Doesn't it strongly resembles the derivative of the sigmoid activation? Moreover, setting the *learning hyper-parameter* effects the learning in a very similar fashion. The higher we set the learning rate, more is the fluctiation in the error rate;  And analogously on setting it beyond the certain value, the gradients explode and no learning takes place.
+
+On the other hand, most of the current models prefer using the ReLu function instead of the Sigmoid activation and still display similar behaviour. *Is it a matter of some simple co-incidence or is there really something intersting behind the hood?* 
